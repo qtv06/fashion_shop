@@ -32,6 +32,7 @@
                         $(layerCurrentItem[index]).addClass($(layerCurrentItem[index]).data('appear') + ' visible-true');
                     },$(layerCurrentItem[i]).data('delay'),i);
                 }
+
             });
 
 
@@ -67,6 +68,7 @@
 
             $(slick1).on('afterChange', function(event, slick, currentSlide){
 
+
                 var layerCurrentItem = $(itemSlick1[currentSlide]).find('.layer-slick1');
 
                 for(var i=0; i<actionSlick1.length; i++) {
@@ -100,6 +102,7 @@
               appendArrows: $(this),
               prevArrow:'<button class="arrow-slick2 prev-slick2"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
               nextArrow:'<button class="arrow-slick2 next-slick2"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+
               responsive: [
                 {
                   breakpoint: 1200,
@@ -130,6 +133,7 @@
                   }
                 }
               ]
+
             });
           });
 

@@ -33,8 +33,11 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 
+=======
+>>>>>>> init project
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -375,6 +378,7 @@
 
 								<li class="p-b-6">
 									<a href="#" data-type="hightolow" class="filter-link stext-106 trans-04">
+
 										Price: High to Low
 									</a>
 								</li>
@@ -395,18 +399,21 @@
 
 								<li class="p-b-6">
 									<a href="#" data-type="0_50" class="filter-link stext-106 trans-04">
+
 										$0.00 - $50.00
 									</a>
 								</li>
 
 								<li class="p-b-6">
 									<a href="#" data-type="50_100" class="filter-link stext-106 trans-04">
+
 										$50.00 - $100.00
 									</a>
 								</li>
 
 								<li class="p-b-6">
 									<a href="#" data-type="100_150" class="filter-link stext-106 trans-04">
+
 										$100.00 - $150.00
 									</a>
 								</li>
@@ -414,10 +421,12 @@
 								<li class="p-b-6">
 									<a href="#" data-type="150" class="filter-link stext-106 trans-04">
 										> $150.00
+
 									</a>
 								</li>
 							</ul>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -475,6 +484,7 @@
 			</div>
 			<input type="hidden" id="numbRow" value="8">
 			<input type="hidden" id="numbAll" value="<?php echo $numbAll['number_row']; ?>">
+
 		</div>
 	</section>
 

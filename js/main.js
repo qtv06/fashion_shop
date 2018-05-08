@@ -61,6 +61,7 @@
     else {
         $(headerDesktop).removeClass('fix-menu-desktop');
         $(wrapMenu).css('top',posWrapHeader - $(this).scrollTop());
+
     }
 
     $(window).on('scroll',function(){
@@ -72,6 +73,7 @@
             $(headerDesktop).removeClass('fix-menu-desktop');
             $(wrapMenu).css('top',posWrapHeader - $(this).scrollTop());
         }
+
     });
 
 
@@ -111,8 +113,6 @@
 
     /*==================================================================
     [ Show / hide modal search ]*/
-    // s
-
 
     /*==================================================================
     [ Isotope ]*/
@@ -144,6 +144,7 @@
     //     });
     // });
 
+
     var isotopeButton = $('.filter-tope-group button');
 
     $(isotopeButton).each(function(){
@@ -166,6 +167,7 @@
             $('.js-show-search').removeClass('show-search');
             $('.panel-search').slideUp(400);
         }
+
     });
 
     $('.js-show-search').on('click',function(){
@@ -355,3 +357,4 @@
     });
 
 })(jQuery);
+
