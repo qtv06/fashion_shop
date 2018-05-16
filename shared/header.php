@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <header>
     <!-- Header desktop -->
     <div class="container-menu-desktop">
@@ -13,9 +14,7 @@
               Help & FAQs
             </a>
 
-            <a href="#" class="flex-c-m trans-04 p-lr-25">
-              My Account
-            </a>
+
 
             <a href="#" class="flex-c-m trans-04 p-lr-25">
               EN
@@ -24,6 +23,31 @@
             <a href="#" class="flex-c-m trans-04 p-lr-25">
               USD
             </a>
+            <?php if(!isset($_SESSION['name'])) {?>
+            <a href="sign-in.php" class="flex-c-m trans-04 p-lr-25">
+              Sign In
+            </a>
+            <a href="register.php" class="flex-c-m trans-04 p-lr-25">
+              Register
+            </a>
+            <?php  }else{?>
+            <a href="#" class="flex-c-m trans-04 p-lr-25">
+              <?php echo $_SESSION['name']; ?>
+            </a>
+            <?php if(isset($_SESSION['role']) && $_SESSION['role'] == 1) {?>
+
+            <a href="admin/lite_version/pages-profile.php" class="flex-c-m trans-04 p-lr-25">
+              Admin
+            </a>
+            <a href="history-order.php" class="flex-c-m trans-04 p-lr-25">
+              History orders
+            </a>
+            <?php } ?>
+            <a href="sign-out.php" class="flex-c-m trans-04 p-lr-25">
+              Sign Out
+            </a>
+            <?php } ?>
+
           </div>
         </div>
       </div>
@@ -32,7 +56,7 @@
         <nav class="limiter-menu-desktop container">
 
           <!-- Logo desktop -->
-          <a href="#" class="logo">
+          <a href="index.php" class="logo">
             <img src="images/icons/logo-01.png" alt="IMG-LOGO">
           </a>
 
@@ -66,8 +90,12 @@
             <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
               <i class="zmdi zmdi-search"></i>
             </div>
-
-            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
+            <?php
+              $total_items = 0;
+            if (isset($_SESSION['total_item'])) {
+              $total_items = $_SESSION['total_item'];
+            } ?>
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="<?php echo $total_items; ?>">
               <i class="zmdi zmdi-shopping-cart"></i>
             </div>
 
@@ -143,14 +171,6 @@
       <ul class="main-menu-m">
         <li>
           <a href="index.php">Home</a>
-          <ul class="sub-menu-m">
-            <li><a href="index.php">Homepage 1</a></li>
-            <li><a href="home-02.html">Homepage 2</a></li>
-            <li><a href="home-03.html">Homepage 3</a></li>
-          </ul>
-          <span class="arrow-main-menu-m">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-          </span>
         </li>
 
         <li>

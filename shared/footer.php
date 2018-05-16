@@ -1,4 +1,5 @@
-<footer class="bg3 p-t-75 p-b-32">
+  <!-- Footer -->
+  <footer class="bg3 p-t-75 p-b-32">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-lg-3 p-b-50">
@@ -71,7 +72,7 @@
           </h4>
 
           <p class="stext-107 cl7 size-201">
-            Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+            Any questions? Let us know in store at 454 Ton Duc Thang, Lien Chieu, Da Nang, Viet Nam  or call us on (+86) 96 716 6879
           </p>
 
           <div class="p-t-27">
@@ -96,7 +97,7 @@
 
           <form>
             <div class="wrap-input1 w-full p-b-4">
-              <input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
+              <input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="noreply  @example.com">
               <div class="focus-input1 trans-04"></div>
             </div>
 
@@ -118,7 +119,6 @@
           <a href="#" class="m-all-1">
             <img src="images/icons/icon-pay-02.png" alt="ICON-PAY">
           </a>
-
           <a href="#" class="m-all-1">
             <img src="images/icons/icon-pay-03.png" alt="ICON-PAY">
           </a>
@@ -134,7 +134,7 @@
 
         <p class="stext-107 cl6 txt-center">
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Vo Van Quang
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
         </p>

@@ -114,7 +114,27 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .slick-slide {outline: none !important;}
 
 
+.valid{
+  color: #4CAF50 !important;
+  border: 1px solid green;
+}
 
+.valid:after{
+  position: relative !important;
+  left: -5px !important;
+  content: "✓" !important;
+}
+
+.invalid{
+  color: red !important;
+  border: 1px solid red;
+}
+
+.invalid:after{
+  position: relative !important;
+  left: -5px !important;
+  content: "x" !important;
+}
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -2935,6 +2955,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .how-pos4 {
+  width: 20px;
   position: absolute;
   top: calc(50% - 9px);
   left: 28px;

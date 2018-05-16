@@ -32,93 +32,20 @@
 <body class="animsition">
 
 	<!-- Header -->
-	<?php include 'shared/header.php' ?>
+	<?php
+		include 'shared/header.php';
+		include 'shared/quick-view-cart.php';
 
-	<!-- Cart -->
-	<div class="wrap-header-cart js-panel-cart">
-		<div class="s-full js-hide-cart"></div>
-
-		<div class="header-cart flex-col-l p-l-65 p-r-25">
-			<div class="header-cart-title flex-w flex-sb-m p-b-8">
-				<span class="mtext-103 cl2">
-					Your Cart
-				</span>
-
-				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
-					<i class="zmdi zmdi-close"></i>
-				</div>
-			</div>
-
-			<div class="header-cart-content flex-w js-pscroll">
-				<ul class="header-cart-wrapitem w-full">
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-01.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								White Shirt Pleat
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $19.00
-							</span>
-						</div>
-					</li>
-
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-02.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Converse All Star
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $39.00
-							</span>
-						</div>
-					</li>
-
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-03.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Nixon Porter Leather
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $17.00
-							</span>
-						</div>
-					</li>
-				</ul>
-
-				<div class="w-full">
-					<div class="header-cart-total w-full p-tb-40">
-						Total: $75.00
-					</div>
-
-					<div class="header-cart-buttons flex-w w-full">
-						<a href="shoping-cart.php" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
-							View Cart
-						</a>
-
-						<a href="shoping-cart.php" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-							Check Out
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+		if(isset($_POST['submit'])){
+			$email = $_POST['email'];
+			$content = $_POST['msg'];
+			$date = date('Y-m-d H:i:s');
+			$qr = "INSERT INTO `feedback`(`email`, `content`, `feedback_date`) VALUES (N'$email', N'$content', '$date')";
+			if(mysqli_query($conn, $qr)){
+				$_SESSION['notice-feedback'] = "We will response soon for you! Thank you for feed back";
+			}
+		}
+	?>
 
 	<!-- Title page -->
 	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg');">
@@ -127,13 +54,29 @@
 		</h2>
 	</section>
 
+	<?php
+		include "connect.php";
+
+	?>
 
 	<!-- Content page -->
 	<section class="bg0 p-t-104 p-b-116">
 		<div class="container">
+			<?php if(isset($_SESSION['notice-feedback'])){ ?>
+			<div class="row" style="margin-left: 0px;margin-right:3px;">
+				<div class="alert alert-success col-md-12" style="box-sizing: border-box;">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<strong>Well!</strong>
+					<?php $notice = $_SESSION['notice-feedback'];
+						echo $notice;
+						unset($_SESSION['notice-feedback']);
+					?>
+				</div>
+			</div>
+			<?php } ?>
 			<div class="flex-w flex-tr">
 				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
-					<form>
+					<form action="contact.php" method="post">
 						<h4 class="mtext-105 cl2 txt-center p-b-30">
 							Send Us A Message
 						</h4>
@@ -147,8 +90,8 @@
 							<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="How Can We Help?"></textarea>
 						</div>
 
-						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
-							Submit
+						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" type="submit" name="submit">
+							<span class="lnr lnr-location" style="width: 40px;"></span>  Give it for us. Please!
 						</button>
 					</form>
 				</div>
@@ -165,7 +108,7 @@
 							</span>
 
 							<p class="stext-115 cl6 size-213 p-t-18">
-								Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
+								454 Ton Duc Thang, Lien Chieu, Da Nang, Viet Na
 							</p>
 						</div>
 					</div>
@@ -181,7 +124,7 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								+1 800 1236879
+								(+86) 96 716 6879
 							</p>
 						</div>
 					</div>
@@ -197,7 +140,7 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								contact@example.com
+								noreply@example.com
 							</p>
 						</div>
 					</div>
@@ -209,7 +152,7 @@
 
 	<!-- Map -->
 	<div class="map">
-		<div class="size-303" id="google_map" data-map-x="40.691446" data-map-y="-73.886787" data-pin="images/icons/pin.png" data-scrollwhell="0" data-draggable="1" data-zoom="11"></div>
+		<div class="size-303" id="google_map" data-map-x="16.061761" data-map-y="108.159318" data-pin="images/icons/pin.png" data-scrollwhell="0" data-draggable="1" data-zoom="14"></div>
 	</div>
 
 
@@ -288,7 +231,7 @@
 					</h4>
 
 					<p class="stext-107 cl7 size-201">
-						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+						Any questions? Let us know in store at 454 Ton Duc Thang, Lien Chieu, Da Nang, Viet Nam  or call us on (+86) 96 716 6879
 					</p>
 
 					<div class="p-t-27">
@@ -313,7 +256,7 @@
 
 					<form>
 						<div class="wrap-input1 w-full p-b-4">
-							<input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
+							<input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="noreply	@example.com">
 							<div class="focus-input1 trans-04"></div>
 						</div>
 
@@ -335,7 +278,6 @@
 					<a href="#" class="m-all-1">
 						<img src="images/icons/icon-pay-02.png" alt="ICON-PAY">
 					</a>
-
 					<a href="#" class="m-all-1">
 						<img src="images/icons/icon-pay-03.png" alt="ICON-PAY">
 					</a>
