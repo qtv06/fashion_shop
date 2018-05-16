@@ -22,7 +22,7 @@
 
           $html .= '<div class="block2-txt flex-w flex-t p-t-14">';
             $html .= '<div class="block2-txt-child1 flex-col-l ">';
-              $html .= '<a href="product-detail.php" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">'.$name.'</a>';
+              $html .= '<a href="product-detail.php?id='.$id.'" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">'.$name.'</a>';
 
               $html .= '<span class="stext-105 cl3">$'.$price.'</span>';
             $html .= '</div>';

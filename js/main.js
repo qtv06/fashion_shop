@@ -296,6 +296,19 @@
                         $('.load-more').css('background-color', '#e6e6e6');
                         $('.load-more').text('Load more').show().fadeIn('slow');
 
+                        $('.js-show-modal1').on('click',function(e){
+                            e.preventDefault();
+                            var idPro = $(this).data('id');
+
+                            $.post("pre-view-product.php", {id_pro: idPro}, function(data){
+                                $('.js-modal1').html(data);
+                                $('.js-modal1').addClass('show-modal12');
+                                $('.js-hide-modal1').on('click',function(){
+                                    $('.js-modal1').html("");
+                                    $('.js-modal1').removeClass('show-modal12');
+                                });
+                            });
+                        });
                     }
                     }, 1500);
                     $('#numbRow').val(numbCurrent + numLimit);
