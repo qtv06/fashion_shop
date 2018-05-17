@@ -292,24 +292,24 @@
                         $('.isotope-grid').append(response);
                         if(numbCurrent + numLimit >= numbAll){
                         $('.load-more').hide('fast');
-                    }else{
-                        $('.load-more').css('background-color', '#e6e6e6');
-                        $('.load-more').text('Load more').show().fadeIn('slow');
+                        }else{
+                            $('.load-more').css('background-color', '#e6e6e6');
+                            $('.load-more').text('Load more').show().fadeIn('slow');
 
-                        $('.js-show-modal1').on('click',function(e){
-                            e.preventDefault();
-                            var idPro = $(this).data('id');
+                            $('.js-show-modal1').on('click',function(e){
+                                e.preventDefault();
+                                var idPro = $(this).data('id');
 
-                            $.post("pre-view-product.php", {id_pro: idPro}, function(data){
-                                $('.js-modal1').html(data);
-                                $('.js-modal1').addClass('show-modal12');
-                                $('.js-hide-modal1').on('click',function(){
-                                    $('.js-modal1').html("");
-                                    $('.js-modal1').removeClass('show-modal12');
+                                $.post("pre-view-product.php", {id_pro: idPro}, function(data){
+                                    $('.js-modal1').html(data);
+                                    $('.js-modal1').addClass('show-modal12');
+                                    $('.js-hide-modal1').on('click',function(){
+                                        $('.js-modal1').html("");
+                                        $('.js-modal1').removeClass('show-modal12');
+                                    });
                                 });
                             });
-                        });
-                    }
+                        }
                     }, 1500);
                     $('#numbRow').val(numbCurrent + numLimit);
 
@@ -320,6 +320,38 @@
         }
 
 
+    });
+    var filter_links = $('.filter-link');
+    $(filter_links).each(function() {
+        $(this).on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            for(var i=0; i < filter_links.length; i++){
+                $(filter_links[i]).removeClass('filter-link-active');
+            }
+            $(this).addClass('filter-link-active');
+            var type = $(this).data('type');
+            $.ajax({
+                url: 'filter-product.php',
+                type: 'POST',
+                data: {type_filter: type},
+                success: function (data) {
+                    $('.isotope-grid').html(data).show().fadeIn('slow');
+                    $('.js-show-modal1').on('click',function(e){
+                        e.preventDefault();
+                        var idPro = $(this).data('id');
+                        $.post("pre-view-product.php", {id_pro: idPro}, function(data){
+                            $('.js-modal1').html(data);
+                            $('.js-modal1').addClass('show-modal12');
+                            $('.js-hide-modal1').on('click',function(){
+                                $('.js-modal1').html("");
+                                $('.js-modal1').removeClass('show-modal12');
+                            });
+                        });
+                    });
+                }
+            });
+        });
     });
 
 })(jQuery);
