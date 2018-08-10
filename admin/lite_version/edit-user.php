@@ -1,4 +1,9 @@
 <?php ob_start() ; ?>
+<?php session_start();
+    if($_SESSION['name'] == "" && $_SESSION['role'] != "1"){
+        header("location: ../../sign-in.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +15,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Admin Shop</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo5.png">
+    <title>Admin | TV Shop</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -69,7 +74,7 @@
                         }
 
                         if(mysqli_query($conn,$qrup)){
-                            $_SESSION['noti-update']= "You updated successful";
+                            $_SESSION['noti-update']= "Cập nhật thành công";
                             header("location:table-user.php");
                         }else{
                             echo mysqli_errors($conn);

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact</title>
+	<title>Liên hệ</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -50,7 +50,7 @@
 	<!-- Title page -->
 	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg');">
 		<h2 class="ltext-105 cl0 txt-center">
-			Contact
+			Liên hệ
 		</h2>
 	</section>
 
@@ -78,20 +78,20 @@
 				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
 					<form action="contact.php" method="post">
 						<h4 class="mtext-105 cl2 txt-center p-b-30">
-							Send Us A Message
+							Gửi tin nhắn cho chúng tôi
 						</h4>
 
 						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Email">
 							<img class="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON">
 						</div>
 
 						<div class="bor8 m-b-30">
-							<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="How Can We Help?"></textarea>
+							<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="Chúng tôi có thể giúp gì cho bạn?"></textarea>
 						</div>
 
 						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" type="submit" name="submit">
-							<span class="lnr lnr-location" style="width: 40px;"></span>  Give it for us. Please!
+							<span class="lnr lnr-location" style="width: 40px;"></span>  Hãy gửi phản hồi cho chúng tôi
 						</button>
 					</form>
 				</div>
@@ -104,11 +104,11 @@
 
 						<div class="size-212 p-t-2">
 							<span class="mtext-110 cl2">
-								Address
+								Địa chỉ
 							</span>
 
 							<p class="stext-115 cl6 size-213 p-t-18">
-								454 Ton Duc Thang, Lien Chieu, Da Nang, Viet Na
+								Hồ Chí Minh, Việt Nam
 							</p>
 						</div>
 					</div>
@@ -120,7 +120,7 @@
 
 						<div class="size-212 p-t-2">
 							<span class="mtext-110 cl2">
-								Lets Talk
+								Hãy gọi đến
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
@@ -136,7 +136,7 @@
 
 						<div class="size-212 p-t-2">
 							<span class="mtext-110 cl2">
-								Sale Support
+								Nhân viên hỗ trợ
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
@@ -163,7 +163,7 @@
 			<div class="row">
 				<div class="col-sm-6 col-lg-3 p-b-50">
 					<h4 class="stext-301 cl0 p-b-30">
-						Categories
+						Thể loại
 					</h4>
 
 					<ul>

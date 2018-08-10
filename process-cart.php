@@ -32,7 +32,7 @@
           }
         }
 
-        $_SESSION['notice-process'] = '<script> swal("Notification","Transaction Successfully! Thank you favour shop","success");</script>';
+        $_SESSION['notice-process'] = '<script> swal("Thông báo","Giao dịch thành công, shop sẽ liên hệ với bạn để giao hàng. Cảm ơn bạn đã mua hàng của shop","success");</script>';
         unset($_SESSION['cart']);
         unset($_SESSION['total_item']);
         header("location:shoping-cart.php");

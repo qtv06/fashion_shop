@@ -6,45 +6,33 @@
       <div class="top-bar">
         <div class="content-topbar flex-sb-m h-full container">
           <div class="left-top-bar">
-            Free shipping for standard order over $100
+            <marquee>Sĩ từ 10 cái giá mềm - Mua từ ba bộ trở lên miễn tiền ship</marquee>
           </div>
 
           <div class="right-top-bar flex-w h-full">
-            <a href="#" class="flex-c-m trans-04 p-lr-25">
-              Help & FAQs
-            </a>
-
-
-
-            <a href="#" class="flex-c-m trans-04 p-lr-25">
-              EN
-            </a>
-
-            <a href="#" class="flex-c-m trans-04 p-lr-25">
-              USD
-            </a>
             <?php if(!isset($_SESSION['name'])) {?>
             <a href="sign-in.php" class="flex-c-m trans-04 p-lr-25">
-              Sign In
+              Đăng nhập
             </a>
             <a href="register.php" class="flex-c-m trans-04 p-lr-25">
-              Register
+              Đăng ký
             </a>
             <?php  }else{?>
             <a href="#" class="flex-c-m trans-04 p-lr-25">
               <?php echo $_SESSION['name']; ?>
+            </a>
+            <a href="history-order.php" class="flex-c-m trans-04 p-lr-25">
+              Lịch sử mua hàng
             </a>
             <?php if(isset($_SESSION['role']) && $_SESSION['role'] == 1) {?>
 
             <a href="admin/lite_version/pages-profile.php" class="flex-c-m trans-04 p-lr-25">
               Admin
             </a>
-            <a href="history-order.php" class="flex-c-m trans-04 p-lr-25">
-              History orders
-            </a>
+
             <?php } ?>
             <a href="sign-out.php" class="flex-c-m trans-04 p-lr-25">
-              Sign Out
+              Đăng xuất
             </a>
             <?php } ?>
 
@@ -57,30 +45,30 @@
 
           <!-- Logo desktop -->
           <a href="index.php" class="logo">
-            <img src="images/icons/logo-01.png" alt="IMG-LOGO">
+            <img src="images/logo4.png" alt="IMG-LOGO">
           </a>
 
           <!-- Menu desktop -->
           <div class="menu-desktop">
             <ul class="main-menu">
               <li class="active-menu">
-                <a href="index.php">Home</a>
+                <a href="index.php">Trang chủ</a>
               </li>
 
               <li>
-                <a href="product.php">Shop</a>
+                <a href="product.php">Cửa hàng</a>
               </li>
 
               <li class="label1" data-label1="hot">
-                <a href="shoping-cart.php">Features</a>
+                <a href="shoping-cart.php">Giỏ hàng</a>
               </li>
 
               <li>
-                <a href="about.php">About</a>
+                <a href="about.php">Giới thiệu</a>
               </li>
 
               <li>
-                <a href="contact.php">Contact</a>
+                <a href="contact.php">Liên hệ</a>
               </li>
             </ul>
           </div>
@@ -111,7 +99,7 @@
     <div class="wrap-header-mobile">
       <!-- Logo moblie -->
       <div class="logo-mobile">
-        <a href="index.php"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+        <a href="index.php"><img src="images/logo4.png" alt="IMG-LOGO"></a>
       </div>
 
       <!-- Icon header -->
@@ -143,54 +131,34 @@
       <ul class="topbar-mobile">
         <li>
           <div class="left-top-bar">
-            Free shipping for standard order over $100
+            <marquee>Sĩ từ 10 cái giá mềm - Mua từ ba bộ trở lên miễn tiền ship</marquee>
           </div>
         </li>
 
         <li>
-          <div class="right-top-bar flex-w h-full">
-            <a href="#" class="flex-c-m p-lr-10 trans-04">
-              Help & FAQs
-            </a>
 
-            <a href="#" class="flex-c-m p-lr-10 trans-04">
-              My Account
-            </a>
-
-            <a href="#" class="flex-c-m p-lr-10 trans-04">
-              EN
-            </a>
-
-            <a href="#" class="flex-c-m p-lr-10 trans-04">
-              USD
-            </a>
-          </div>
         </li>
       </ul>
 
-      <ul class="main-menu-m">
-        <li>
-          <a href="index.php">Home</a>
+      <ul class="main-menu">
+        <li class="active-menu">
+          <a href="index.php">Trang chủ</a>
         </li>
 
         <li>
-          <a href="product.php">Shop</a>
+          <a href="product.php">Cửa hàng</a>
+        </li>
+
+        <li class="label1" data-label1="hot">
+          <a href="shoping-cart.php">Giỏ hàng</a>
         </li>
 
         <li>
-          <a href="shoping-cart.php" class="label1 rs1" data-label1="hot">Features</a>
+          <a href="about.php">Giới thiệu</a>
         </li>
 
         <li>
-          <a href="blog.html">Blog</a>
-        </li>
-
-        <li>
-          <a href="about.php">About</a>
-        </li>
-
-        <li>
-          <a href="contact.php">Contact</a>
+          <a href="contact.php">Liên hệ</a>
         </li>
       </ul>
     </div>

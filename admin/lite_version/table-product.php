@@ -1,3 +1,9 @@
+<?php ob_start() ; ?>
+<?php session_start();
+    if($_SESSION['name'] == "" && $_SESSION['role'] != "1"){
+        header("location: ../../sign-in.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +15,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Admin Shop</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo5.png">
+    <title>Admin | TV Shop</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->

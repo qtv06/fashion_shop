@@ -6,11 +6,12 @@
 		$qr = "delete from users where email='$email'";
 		// echo $qr;
 		if(mysqli_query($conn,$qr)){
-			$_SESSION['noti-update'] = "You deleted succesful";
+			$_SESSION['noti-update'] = "Xóa thành công";
 			header("location:table-user.php");
 		}
 		else{
-			echo mysqli_error($conn);
+			$_SESSION['noti-update'] = "Tài khoản này đang mua hàng, không thể xóa";
+			header("location:table-user.php");
 		}
 		mysqli_close($conn);
 	}

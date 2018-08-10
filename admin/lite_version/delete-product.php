@@ -7,7 +7,7 @@
 		// echo $qr;
 
 		if(mysqli_query($conn,$qr)){
-			$_SESSION['noti-err-pr'] = "You deleted succesful";
+			$_SESSION['noti-err-pr'] = "Xóa thành công";
 			header("location:table-product.php");
 		}
 		else{

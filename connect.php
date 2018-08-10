@@ -1,8 +1,8 @@
 <?php
-  $username = "root";
-  $password = "vovanquang";
-  $servername ="localhost";
-  $dbname = "shop_fashion";
+  $username = "sql12251394";//"root";
+  $password = "glyTLxGqSl";//"vovanquang";
+  $servername ="sql12.freemysqlhosting.net";//"localhost";
+  $dbname = "sql12251394";//"shop_fashion";
   $conn = mysqli_connect($servername,$username,$password,$dbname);
   mysqli_set_charset($conn, 'utf8');
   if(!$conn){

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shoping Cart</title>
+	<title>Giỏ hàng | TV Shop</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+	<link rel="icon" type="image/png" href="images/logo4.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -41,12 +41,12 @@
 	<div class="container" style="margin-top: 84px;">
 		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
 			<a href="index.php" class="stext-109 cl8 hov-cl1 trans-04">
-				Home
+				Trang chủ
 				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
 			</a>
 
 			<span class="stext-109 cl4">
-				Shoping Cart
+				Giỏ hàng
 			</span>
 		</div>
 	</div>
@@ -60,12 +60,12 @@
 						<div class="wrap-table-shopping-cart">
 							<table class="table-shopping-cart">
 								<tr class="table_head">
-									<th class="column-1">Product</th>
-									<th class="column-2">Names</th>
-									<th class="column-3">Price</th>
-									<th class="column-4">Quantity</th>
-									<th class="column-5">Total</th>
-									<th class="column-6">Actions</th>
+									<th class="column-1">Hình ảnh</th>
+									<th class="column-2">Tên sản phẩm</th>
+									<th class="column-3">Giá</th>
+									<th class="column-4">Số lượng</th>
+									<th class="column-5">Tổng tiền</th>
+									<th class="column-6">Chức năng</th>
 								</tr>
 								<?php
 									if(isset($_SESSION['cart'])){
@@ -116,7 +116,7 @@
 											</form>
 										</tr>
 								<?php }}}else{ ?>
-									<h3 style="padding: 10px;">Don't have any item, you can buy more than.</h3>
+									<h3 style="padding: 10px;">Giỏ hàng của bạn đang trống! Hãy mua hàng nhanh nào!!</h3>
 								<?php }} ?>
 							</table>
 						</div>
@@ -128,13 +128,13 @@
 				<div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
 					<div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
 						<h4 class="mtext-109 cl2 p-b-30">
-							Cart Totals
+							Thống kê giỏ hàng
 						</h4>
 
 						<div class="flex-w flex-t bor12 p-b-13">
 							<div class="size-208">
 								<span class="stext-110 cl2">
-									Subtotal:
+									Tổng tiền:
 								</span>
 							</div>
 
@@ -148,7 +148,7 @@
 						<div class="flex-w flex-t bor12 p-t-15 p-b-30">
 							<div class="size-208 w-full-ssm">
 								<span class="stext-110 cl2">
-									Shipping:
+									Phí ship:
 								</span>
 							</div>
 
@@ -164,7 +164,7 @@
 						<div class="flex-w flex-t p-t-27 p-b-33">
 							<div class="size-208">
 								<span class="mtext-101 cl2">
-									Total:
+									Tổng:
 								</span>
 							</div>
 
@@ -176,7 +176,7 @@
 						</div>
 
 						<a href="process-cart.php"><button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
-							Proceed to Checkout
+							Thanh toán
 						</button></a>
 					</div>
 				</div>

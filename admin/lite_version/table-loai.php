@@ -1,3 +1,9 @@
+<?php ob_start() ; ?>
+<?php session_start();
+    if($_SESSION['name'] == "" && $_SESSION['role'] != "1"){
+        header("location: ../../sign-in.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +15,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Admin Shop</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo5.png">
+    <title>Admin | TV Shop</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -45,14 +51,14 @@
 
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Categories</h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Danh mục sản phẩm</h3>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Category</li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
+                            <li class="breadcrumb-item active">Danh mục</li>
                         </ol>
                     </div>
                     <div class="col-md-6 col-4 align-self-center">
-                        <a href="add-theloai.php" class="btn pull-right hidden-sm-down btn-success">Add a Category</a>
+                        <a href="add-theloai.php" class="btn pull-right hidden-sm-down btn-success">Thêm danh mục</a>
                     </div>
                 </div>
                 <?php if(isset($_SESSION['noti-err-ml']) && !is_null($_SESSION['noti-err-ml'])){
@@ -91,9 +97,9 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Category ID</th>
-                                                <th>Category Name</th>
-                                                <th>Actions</th>
+                                                <th>Mã danh mục</th>
+                                                <th>Tên danh mục</th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>

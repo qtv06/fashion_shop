@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-sm-6 col-lg-3 p-b-50">
           <h4 class="stext-301 cl0 p-b-30">
-            Categories
+            Thể loại
           </h4>
 
           <ul>
@@ -36,31 +36,19 @@
 
         <div class="col-sm-6 col-lg-3 p-b-50">
           <h4 class="stext-301 cl0 p-b-30">
-            Help
+            Trợ giúp
           </h4>
 
           <ul>
             <li class="p-b-10">
               <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                Track Order
+                Chuyển hàng
               </a>
             </li>
 
             <li class="p-b-10">
               <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                Returns
-              </a>
-            </li>
-
-            <li class="p-b-10">
-              <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                Shipping
-              </a>
-            </li>
-
-            <li class="p-b-10">
-              <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                FAQs
+                Câu hỏi thường gặp
               </a>
             </li>
           </ul>

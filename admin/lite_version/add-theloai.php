@@ -1,3 +1,8 @@
+<?php session_start();
+    if($_SESSION['name'] == "" && $_SESSION['role'] != "1"){
+        header("location: ../../sign-in.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +13,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Admin Shop</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo5.png">
+    <title>Admin | TV Shop</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -37,14 +42,14 @@
                 $qr = "insert into categories values('$category_id','$category_name')";
 
                 if(mysqli_query($conn,$qr)){
-                    $_SESSION['noti-err-ml']= "You added successful";
+                    $_SESSION['noti-err-ml']= "Thêm mới thành công";
                     header("location:table-loai.php");
                 }else{
                     echo mysqli_error($conn);
                 }
 
             }else{
-                $_SESSION['noti-err-ml'] = "category_id is available!!";
+                $_SESSION['noti-err-ml'] = "Mã danh mục đã tồn tại!!";
                 header("location:add-theloai.php");
             }
 
@@ -65,10 +70,10 @@
             <div class="container-fluid">
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Add a Category</h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Thêm danh mục</h3>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Add Category</li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
+                            <li class="breadcrumb-item active">Thêm danh mục</li>
                         </ol>
                     </div>
 
@@ -98,20 +103,20 @@
                                 <form class="form-horizontal form-material" method="POST" action="add-theloai.php" >
 
                                     <div class="form-group">
-                                        <label class="col-md-12">Category ID</label>
+                                        <label class="col-md-12">Mã danh mục</label>
                                         <div class="col-md-12">
                                             <input type="text" name="category_id"  class="form-control form-control-line">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-md-12">Category Name</label>
+                                        <label class="col-md-12">Tên danh mục</label>
                                         <div class="col-md-12">
                                             <input type="text" name="category_name"  class="form-control form-control-line">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <button type="submit" name="submit" value="theloai" class="btn btn-success">Add</button>
+                                            <button type="submit" name="submit" value="theloai" class="btn btn-success">Thêm danh mục</button>
                                         </div>
                                     </div>
                                 </form>

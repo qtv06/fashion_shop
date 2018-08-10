@@ -1,4 +1,9 @@
- <!DOCTYPE html>
+<?php session_start();
+    if($_SESSION['name'] == "" && $_SESSION['role'] != "1"){
+        header("location: ../../sign-in.php");
+    }
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,8 +13,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Admin Shop</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo5.png">
+    <title>Admin | TV Shop</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -64,11 +69,11 @@
                 $qr = "update products set name='$name', description='$mota', quantity='$soluong', price='$gia', category_id='$maloai', created_at='$thoigian', image='$filename' where product_id='$id'";
             }
             if(mysqli_query($conn,$qr)){
-                $_SESSION['noti-err-pr']= "You updated successful";
+                $_SESSION['noti-err-pr']= "Cập nhật thành công";
                 header("location:table-product.php");
             }else{
                 echo mysqli_error($conn);
-                $_SESSION['noti-err-pr'] = "Update product have few errors!!";
+                $_SESSION['noti-err-pr'] = "Bạn phải điền đầy đủ thông tin!!";
                 header("location:edit-product.php");
             }
         }

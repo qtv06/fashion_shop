@@ -20,7 +20,7 @@
     if(!$check){
       $_SESSION['cart'][$id] = $sl;
     }
-    $_SESSION['addcart'] = '<script>var nameProduct = $(".js-addcart-detail").parent().parent().parent().parent().parent().find(\'.name-details\').html(); swal(nameProduct,"is added to wishlist !","success").then(function(){location.reload();});</script>';
+    $_SESSION['addcart'] = '<script>var nameProduct = $(".js-addcart-detail").parent().parent().parent().parent().parent().find(\'.name-details\').html(); swal(nameProduct,"đã được thêm vào giỏ hàng của bạn!","success").then(function(){location.reload();});</script>';
 
   }
   header("location: product-detail.php?id=".$_GET['product-id']);

@@ -1,5 +1,9 @@
 <?php ob_start() ; ?>
-<?php session_start(); ?>
+<?php session_start();
+    if($_SESSION['name'] == "" && $_SESSION['role'] != "1"){
+        header("location: ../../sign-in.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +15,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Admin Shop</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo5.png">
+    <title>Admin | TV Shop</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -40,10 +44,10 @@
             <div class="container-fluid">
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Information Personal</h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Thông tin cá nhân</h3>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Information Personal</li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
+                            <li class="breadcrumb-item active">Thông tin cá nhân</li>
                         </ol>
                     </div>
 
@@ -85,7 +89,7 @@
                                         <img src="../../images/<?php echo $row['avatar']; ?>" class="img-circle" width="150" />
                                     <?php } ?>
                                     <h4 class="card-title m-t-10">Admin</h4>
-                                    <h6 class="card-subtitle">Accoubts Manager Amix corp</h6>
+                                    <h6 class="card-subtitle">Quản lí hệ thống</h6>
                                     <div class="row text-center justify-content-md-center">
                                         <div class="col-4"><a href="javascript:void(0)" class="link"><i class="icon-people"></i> <font class="font-medium">254</font></a></div>
                                         <div class="col-4"><a href="javascript:void(0)" class="link"><i class="icon-picture"></i> <font class="font-medium">54</font></a></div>
@@ -99,13 +103,13 @@
                             <div class="card-block">
                                 <form class="form-horizontal form-material" action="pages-profile.php" method="post">
                                     <div class="form-group">
-                                        <label class="col-md-12">Full Name</label>
+                                        <label class="col-md-12">Họ và tên</label>
                                         <div class="col-md-12">
                                             <input type="text" name="username" value="<?php echo $row['username']; ?>" class="form-control form-control-line">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-md-12">Avatar</label>
+                                        <label class="col-md-12">Ảnh đại diện</label>
                                         <div class="col-md-12">
                                             <input type="file" name="hinhanh" class="form-control form-control-line">
                                         </div>
@@ -119,19 +123,19 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-md-12">Password</label>
+                                        <label class="col-md-12">Mật khẩu</label>
                                         <div class="col-md-12">
                                             <input type="password" name="password"  value="<?php echo $row['password']; ?>" class="form-control form-control-line" >
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-md-12">Phone Numbers</label>
+                                        <label class="col-md-12">SĐT</label>
                                         <div class="col-md-12">
                                             <input type="text" name="phone"  value="<?php echo $row['phone_number']; ?>" class="form-control form-control-line" >
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-md-12">Role</label>
+                                        <label class="col-md-12">Quyền</label>
                                         <div class="col-md-12">
                                             <select name="role" class="form-control" required="required">
                                                 <?php
@@ -150,7 +154,7 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <button type="submit" name="update" class="btn btn-success">Update</button>
+                                            <button type="submit" name="update" class="btn btn-success">Cập nhật</button>
                                         </div>
                                     </div>
                                 </form>
@@ -180,7 +184,7 @@
                         }
 
                         if(mysqli_query($conn,$qrup)){
-                            $_SESSION['noti-update']= "You updated successful";
+                            $_SESSION['noti-update']= "Cập nhật thành công";
                             header("location:pages-profile.php");
                         }else{
                             echo mysqli_errors($conn);

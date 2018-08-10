@@ -1,4 +1,9 @@
- <!DOCTYPE html>
+<?php session_start();
+    if($_SESSION['name'] == "" && $_SESSION['role'] != "1"){
+        header("location: ../../sign-in.php");
+    }
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,8 +13,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Admin Shop</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo5.png">
+    <title>Admin | TV Shop</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -40,11 +45,11 @@
             $qr = "insert into products(name,price,quantity,description,image,category_id,created_at) values('$name','$price','$quantity','$description','$filename','$category_id','$created_at')";
 
             if(mysqli_query($conn,$qr)){
-                $_SESSION['noti-err-pr']= "You added successful";
+                $_SESSION['noti-err-pr']= "Thêm mới thành công";
                 header("location:table-product.php");
             }else{
                 echo mysqli_error($conn);
-                $_SESSION['noti-err-pr'] = "Add product have few errors!!";
+                $_SESSION['noti-err-pr'] = "Hãy kiểm tra lại thông tin đã nhập!!";
                 header("location:add-product.php");
             }
         }
@@ -114,7 +119,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-md-12">Giá</label>
+                                        <label class="col-md-12">Price</label>
                                         <div class="col-md-12">
                                             <input type="text" name="gia"  class="form-control form-control-line">
                                         </div>

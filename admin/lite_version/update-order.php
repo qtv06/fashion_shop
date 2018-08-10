@@ -11,7 +11,7 @@
         $customer_email = $_SESSION['customer_email'];
         // $to = $_SESSION['customer_email'];
         $subject = "Reponse status shopping from CozaStore";
-        $message = "Hi ".$customer_name."\nYour order status is updated to ".$status_update;
+        $message = "Hi ".$customer_name."\nYour order status is updated to ".$status_update."\nYou can check it at here: http://localhost/cozastore/cozastore/history-order.php";
         $headers = 'From: vanquang451@gmail.com' . "\r\n" .
           'Reply-To: webmaster@example.com' . "\r\n" .
           'X-Mailer: PHP/' . phpversion();

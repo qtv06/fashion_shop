@@ -60,7 +60,7 @@
 	<div class="container" style="margin-top: 85px;">
 		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
 			<a href="index.php" class="stext-109 cl8 hov-cl1 trans-04">
-				Home
+				Trang chủ
 				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
 			</a>
 
@@ -134,7 +134,7 @@
 										</div>
 
 										<button type="submit" name="add-cart" value="add-cart" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-											Add to cart
+											Thêm vào giỏ hàng
 										</button>
 									</form>
 								</div>
@@ -360,7 +360,7 @@
 		<div class="container">
 			<div class="p-b-45">
 				<h3 class="ltext-106 cl5 txt-center">
-					Related Products
+					Có thể bạn quan tâm
 				</h3>
 			</div>
 
@@ -385,10 +385,9 @@
 
 							<div class="block2-txt flex-w flex-t p-t-14">
 								<div class="block2-txt-child1 flex-col-l ">
-									<a href="product-detail.php" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+									<a href="product-detail.php?id=<?php echo $ro['product_id']; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 										<?php echo $ro['name']; ?>
 									</a>
-
 									<span class="stext-105 cl3">
 										$<?php echo $ro['price']; ?>
 									</span>

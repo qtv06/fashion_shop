@@ -7,7 +7,7 @@
 		// echo $qr;
 
 		if(mysqli_query($conn,$qr)){
-			$_SESSION['noti-delete-loai'] = "You deleted succesful";
+			$_SESSION['noti-delete-loai'] = "Xóa thành công";
 			header("location:table-loai.php");
 		}
 		else{

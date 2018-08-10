@@ -11,10 +11,10 @@
 
 
     if($old_quantity < $sl){
-      $_SESSION['notice-process'] = '<script> var old_quantity ='.json_encode($old_quantity).';var name='.json_encode($row['name']).'; swal("Oh No",name+ " just only have " +old_quantity+" products","warning");</script>';
+      $_SESSION['notice-process'] = '<script> var old_quantity ='.json_encode($old_quantity).';var name='.json_encode($row['name']).'; swal("Thông báo",name+ " chỉ còn lại " +old_quantity+" sản phẩm","warning");</script>';
     }else{
       $_SESSION['cart'][$id] = $sl;
-      $_SESSION['notice-process'] = '<script> swal("Good job!","You updated quantity this product succesfully!","success");</script>';
+      $_SESSION['notice-process'] = '<script> swal("Thông báo","Bạn đã cập nhật số lượng sản phẩm thành công","success");</script>';
     }
     // echo $_SESSION['cart'][$id];
     header("location:shoping-cart.php");

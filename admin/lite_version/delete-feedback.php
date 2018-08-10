@@ -1,3 +1,8 @@
+<?php session_start();
+  if($_SESSION['name'] == "" && $_SESSION['role'] != "1"){
+      header("location: ../../sign-in.php");
+  }
+?>
 <?php
 	session_start();
 	if(isset($_GET['id'])){
@@ -7,7 +12,7 @@
 		// echo $qr;
 
 		if(mysqli_query($conn,$qr)){
-			$_SESSION['noti-err-pr'] = "You deleted succesful";
+			$_SESSION['noti-err-pr'] = "Xóa thành công";
 			header("location:table-feedback.php");
 		}
 		else{

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shoping Cart</title>
+  <title>Lịch sử | TV Shop</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-  <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+  <link rel="icon" type="image/png" href="images/logo5.png"/>
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
   <link href="admin/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,12 +43,12 @@
   <div class="container" style="margin-top: 84px;">
     <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
       <a href="index.php" class="stext-109 cl8 hov-cl1 trans-04">
-        Home
+        Trang chủ
         <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
       </a>
 
       <span class="stext-109 cl4">
-        Shoping Cart
+        Lịch sử mua hàng
       </span>
     </div>
   </div>
@@ -63,10 +63,10 @@
               <table class="table">
                 <thead>
                     <tr>
-                        <th>Order ID</th>
-                        <th>Status</th>
-                        <th>Order Day</th>
-                        <th>Actions</th>
+                        <th>Mã hóa đơn</th>
+                        <th>Trạng thái</th>
+                        <th>Ngày đặt hàng</th>
+                        <th>Hành động</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -105,7 +105,7 @@
         <div class="col-lg-10 col-xl-5 m-lr-auto m-b-50">
           <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
             <h4 class="mtext-109 cl2 p-b-30">
-              List Items
+              Danh sách sản phẩm
             </h4>
 
             <ul class="header-cart-wrapitem w-full list-order-items">
