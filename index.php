@@ -34,7 +34,6 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
