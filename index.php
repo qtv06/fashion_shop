@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
+	<title>TV SHOP</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+	<link rel="icon" type="image/png" href="images/logo5.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -43,100 +43,14 @@
 <body class="animsition">
 
 	<!-- Header -->
-	<?php include 'shared/header.php' ?>
-
-	<!-- Cart -->
-	<div class="wrap-header-cart js-panel-cart">
-		<div class="s-full js-hide-cart"></div>
-
-		<div class="header-cart flex-col-l p-l-65 p-r-25">
-			<div class="header-cart-title flex-w flex-sb-m p-b-8">
-				<span class="mtext-103 cl2">
-					Your Cart
-				</span>
-
-				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
-					<i class="zmdi zmdi-close"></i>
-				</div>
-			</div>
-
-			<div class="header-cart-content flex-w js-pscroll">
-				<ul class="header-cart-wrapitem w-full">
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-01.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								White Shirt Pleat
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $19.00
-							</span>
-						</div>
-					</li>
-
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-02.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Converse All Star
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $39.00
-							</span>
-						</div>
-					</li>
-
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-03.jpg" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Nixon Porter Leather
-							</a>
-
-							<span class="header-cart-item-info">
-								1 x $17.00
-							</span>
-						</div>
-					</li>
-				</ul>
-
-				<div class="w-full">
-					<div class="header-cart-total w-full p-tb-40">
-						Total: $75.00
-					</div>
-
-					<div class="header-cart-buttons flex-w w-full">
-						<a href="shoping-cart.php" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
-							View Cart
-						</a>
-
-						<a href="shoping-cart.php" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-							Check Out
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
+	<?php include 'shared/header.php';
+		include 'shared/quick-view-cart.php';
+	 ?>
 	<!-- Slider -->
 	<section class="section-slide">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(images/slide-01.jpg);">
+				<div class="item-slick1" style="background-image: url(images/anh5.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -160,7 +74,7 @@
 					</div>
 				</div>
 
-				<div class="item-slick1" style="background-image: url(images/slide-02.jpg);">
+				<div class="item-slick1" style="background-image: url(images/slide-01.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
@@ -184,7 +98,7 @@
 					</div>
 				</div>
 
-				<div class="item-slick1" style="background-image: url(images/slide-03.jpg);">
+				<div class="item-slick1" style="background-image: url(images/anh6.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
@@ -218,23 +132,21 @@
 			<div class="row">
 				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="images/banner-01.jpg" alt="IMG-BANNER">
-
+					<div class="block1 wrap-pic-w banner-img banner1">
 						<a href="product.php" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Women
+									Đồ ngủ nữ dễ thương
 								</span>
 
 								<span class="block1-info stext-102 trans-04">
-									Spring 2018
+									Hàng chạy nhất
 								</span>
 							</div>
 
 							<div class="block1-txt-child2 p-b-4 trans-05">
 								<div class="block1-link stext-101 cl0 trans-09">
-									Shop Now
+									Mua ngay
 								</div>
 							</div>
 						</a>
@@ -243,23 +155,21 @@
 
 				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="images/banner-02.jpg" alt="IMG-BANNER">
-
+					<div class="block1 wrap-pic-w banner-img banner2">
 						<a href="product.php" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Men
+									Đồ bộ thể thao nữ
 								</span>
 
 								<span class="block1-info stext-102 trans-04">
-									Spring 2018
+									Mùa hè 2018
 								</span>
 							</div>
 
 							<div class="block1-txt-child2 p-b-4 trans-05">
 								<div class="block1-link stext-101 cl0 trans-09">
-									Shop Now
+									Mua ngay
 								</div>
 							</div>
 						</a>
@@ -268,23 +178,21 @@
 
 				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 					<!-- Block1 -->
-					<div class="block1 wrap-pic-w">
-						<img src="images/banner-03.jpg" alt="IMG-BANNER">
-
+					<div class="block1 wrap-pic-w banner-img banner3">
 						<a href="product.php" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Accessories
+									Áo khoác nữ hot 2018
 								</span>
 
 								<span class="block1-info stext-102 trans-04">
-									New Trend
+									Mùa hè 2018
 								</span>
 							</div>
 
 							<div class="block1-txt-child2 p-b-4 trans-05">
 								<div class="block1-link stext-101 cl0 trans-09">
-									Shop Now
+									Mua ngay
 								</div>
 							</div>
 						</a>
@@ -294,109 +202,76 @@
 		</div>
 	</div>
 
-
-	<!-- Product -->
-	<section class="bg0 p-t-23 p-b-140">
+	<section class="sec-relate-product bg0 p-t-45 p-b-105">
 		<div class="container">
-			<div class="p-b-10">
-				<h3 class="ltext-103 cl5">
-					Product Overview
-				</h3>
+			<div class="p-b-45">
+				<h4 class="ltext-103 cl5 txt-left">
+					Sản phẩm phổ biến
+				</h4>
 			</div>
 
-			<div class="flex-w flex-sb-m p-b-52">
-				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-						All Products
-					</button>
+			<!-- Slide2 -->
+			<div class="wrap-slick2">
+				<div class="slick2">
+					<?php
+						$qr = "select product_id, name, price, image, description, category_name, c.category_id from products p join categories c on p.category_id = c.category_id";
+						$rs = mysqli_query($conn, $qr);
+						while($ro = mysqli_fetch_array($rs)){
+					?>
+					<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-pic hov-img0">
+								<img src="images/<?php echo $ro['image']; ?>" alt="IMG-PRODUCT">
 
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
-						Women
-					</button>
-
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".men">
-						Men
-					</button>
-
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".bag">
-						Bag
-					</button>
-
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".shoes">
-						Shoes
-					</button>
-
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
-						Watches
-					</button>
-				</div>
-
-				<div class="flex-w flex-c-m m-tb-10">
-					<div class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter">
-						<i class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list"></i>
-						<i class="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
-						 Filter
-					</div>
-
-					<div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
-						<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
-						<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
-						Search
-					</div>
-				</div>
-
-				<!-- Search product -->
-				<div class="dis-none panel-search w-full p-t-10 p-b-15">
-					<div class="bor8 dis-flex p-l-15">
-						<button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
-							<i class="zmdi zmdi-search"></i>
-						</button>
-
-						<input class="mtext-107 cl2 size-114 plh2 p-r-15" type="text" name="search-product" placeholder="Search">
-					</div>
-				</div>
-
-				<!-- Filter -->
-				<div class="dis-none panel-filter w-full p-t-10">
-					<div class="wrap-filter flex-w bg6 w-full p-lr-40 p-t-27 p-lr-15-sm">
-						<div class="filter-col1 p-r-15 p-b-27">
-							<div class="mtext-102 cl2 p-b-15">
-								Sort By
+								<a href="#" data-id="<?php echo $ro['product_id']; ?>" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+									Xem nhanh
+								</a>
 							</div>
 
-							<ul>
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
-										Default
+							<div class="block2-txt flex-w flex-t p-t-14">
+								<div class="block2-txt-child1 flex-col-l ">
+									<a href="product-detail.php?id=<?php echo $ro['product_id']; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+										<?php echo $ro['name']; ?>
 									</a>
-								</li>
-								<li class="p-b-6">
-									<a href="#" data-type="lowtohigh" class="filter-link stext-106 trans-04">
-										Price: Low to High
-									</a>
-								</li>
 
+<<<<<<< HEAD
 								<li class="p-b-6">
 									<a href="#" data-type="hightolow" class="filter-link stext-106 trans-04">
 
 										Price: High to Low
-									</a>
-								</li>
-							</ul>
-						</div>
+=======
+									<span class="stext-105 cl3">
+										$<?php echo $ro['price']; ?>
+									</span>
+								</div>
 
-						<div class="filter-col2 p-r-15 p-b-27">
-							<div class="mtext-102 cl2 p-b-15">
-								Price
+								<div class="block2-txt-child2 flex-r p-t-3">
+									<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+										<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
+										<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+>>>>>>> login-logout
+									</a>
+								</div>
 							</div>
+						</div>
+					</div>
+					<?php } ?>
+				</div>
 
-							<ul>
-								<li class="p-b-6">
-									<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
-										All
-									</a>
-								</li>
+			</div>
+		</div>
+	</section>
 
+	<section class="sec-relate-product bg0 p-t-45 p-b-105">
+		<div class="container">
+			<div class="p-b-45">
+				<h4 class="ltext-103 cl5 txt-left">
+					Sản phẩm giảm giá
+				</h4>
+			</div>
+
+<<<<<<< HEAD
 								<li class="p-b-6">
 									<a href="#" data-type="0_50" class="filter-link stext-106 trans-04">
 
@@ -408,9 +283,34 @@
 									<a href="#" data-type="50_100" class="filter-link stext-106 trans-04">
 
 										$50.00 - $100.00
-									</a>
-								</li>
+=======
+			<!-- Slide2 -->
+			<div class="wrap-slick2">
+				<div class="slick2">
+					<?php
+						$qr = "select product_id, name, price, image, description, category_name, c.category_id from products p join categories c on p.category_id = c.category_id";
+						$rs = mysqli_query($conn, $qr);
+						while($ro = mysqli_fetch_array($rs)){
+					?>
+					<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-pic hov-img0">
+								<img src="images/<?php echo $ro['image']; ?>" alt="IMG-PRODUCT">
 
+								<a href="#" data-id="<?php echo $ro['product_id']; ?>" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+									Xem nhanh
+								</a>
+							</div>
+
+							<div class="block2-txt flex-w flex-t p-t-14">
+								<div class="block2-txt-child1 flex-col-l ">
+									<a href="product-detail.php?id=<?php echo $ro['product_id']; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+										<?php echo $ro['name']; ?>
+>>>>>>> login-logout
+									</a>
+
+<<<<<<< HEAD
 								<li class="p-b-6">
 									<a href="#" data-type="100_150" class="filter-link stext-106 trans-04">
 
@@ -422,14 +322,40 @@
 									<a href="#" data-type="150" class="filter-link stext-106 trans-04">
 										> $150.00
 
+=======
+									<span class="stext-105 cl3">
+										$<?php echo $ro['price']; ?>
+									</span>
+								</div>
+
+								<div class="block2-txt-child2 flex-r p-t-3">
+									<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+										<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
+										<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+>>>>>>> login-logout
 									</a>
-								</li>
-							</ul>
+								</div>
+							</div>
 						</div>
 
 					</div>
+					<?php } ?>
 				</div>
+
 			</div>
+		</div>
+	</section>
+
+	<!-- Product -->
+	<section class="bg0 p-t-23 p-b-140">
+		<div class="container">
+			<div class="p-b-10" style="padding-bottom: 30px;">
+				<h3 class="ltext-103 cl5">
+					Gợi ý hôm nay
+				</h3>
+			</div>
+
+
 
 			<div class="row isotope-grid" style="height: auto;">
 
@@ -438,7 +364,7 @@
 					$sqla = "select count(*) as number_row from products";
 					$rs = mysqli_query($conn,$sqla);
 					$numbAll = mysqli_fetch_array($rs);
-					$sql = "select product_id, name, price, image, description, category_name from products p join categories c on p.category_id = c.category_id limit 8";
+					$sql = "select product_id, name, price, image, description, category_name from products p join categories c on p.category_id = c.category_id limit 20";
 					$result = mysqli_query($conn, $sql);
 					while($row = mysqli_fetch_array($result)){
 				?>
@@ -449,7 +375,7 @@
 									<img src="images/<?php echo $row['image']; ?>" alt="IMG-PRODUCT">
 
 									<a href="#" data-id="<?php echo $row['product_id']; ?>" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-										Quick View
+										Xem nhanh
 									</a>
 								</div>
 
@@ -465,7 +391,7 @@
 									</div>
 
 									<div class="block2-txt-child2 flex-r p-t-3">
-										<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+										<a href="add-wishlist.php?product_id=<?php echo $row['name'];?>" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
 											<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
 											<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
 										</a>
@@ -475,11 +401,11 @@
 						</div>
 				<?php } ?>
 
-		</div>
+			</div>
 			<!-- Load more -->
 			<div class="flex-c-m flex-w w-full p-t-45">
 				<a href="#" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04 load-more">
-					Load More
+					Xem thêm
 				</a>
 			</div>
 			<input type="hidden" id="numbRow" value="8">
@@ -487,8 +413,6 @@
 
 		</div>
 	</section>
-
-
 	<!-- Footer -->
 	<?php  include 'shared/footer.php' ?>
 
@@ -504,6 +428,8 @@
 	<div class="wrap-modal1 js-modal1 p-t-60 p-b-20">
 
 	</div>
+	<div class="zalo-share-button" data-href="https://www.facebook.com/" data-oaid="3337183327522788222" data-layout="5" data-color="blue" data-customize=false></div>
+
 
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -552,19 +478,19 @@
 <!--===============================================================================================-->
 	<script src="vendor/sweetalert/sweetalert.min.js"></script>
 	<script>
-		$('.js-addwish-b2').on('click', function(e){
-			e.preventDefault();
-		});
+		// $('.js-addwish-b2').on('click', function(e){
+		// 	e.preventDefault();
+		// });
 
-		$('.js-addwish-b2').each(function(){
-			var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
-			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
+		// $('.js-addwish-b2').each(function(){
+		// 	var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
+		// 	$(this).on('click', function(){
+		// 		swal(nameProduct, "is added to wishlist !", "success");
 
-				$(this).addClass('js-addedwish-b2');
-				$(this).off('click');
-			});
-		});
+		// 		$(this).addClass('js-addedwish-b2');
+		// 		$(this).off('click');
+		// 	});
+		// });
 
 		$('.js-addwish-detail').each(function(){
 			var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
@@ -587,6 +513,7 @@
 		});
 
 	</script>
+
 <!--===============================================================================================-->
 	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 	<script>
@@ -603,9 +530,39 @@
 				ps.update();
 			})
 		});
+		function searchByName(name){
+			$.ajax({
+				url: 'search-product.php?search_name='+ name,
+				type: 'POST',
+				data: {search_name: name},
+				success: function(result){
+					$('.isotope-grid').html(result).show().fadeIn('slow');
+            $('.js-show-modal1').on('click',function(e){
+                e.preventDefault();
+                var idPro = $(this).data('id');
+                $.post("pre-view-product.php", {id_pro: idPro}, function(result){
+                    $('.js-modal1').html(data);
+                    $('.js-modal1').addClass('show-modal12');
+                    $('.js-hide-modal1').on('click',function(){
+                        $('.js-modal1').html("");
+                        $('.js-modal1').removeClass('show-modal12');
+                    });
+                });
+            });
+				}
+			});
+		}
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
+	<?php
+		if(isset($_SESSION['notice-wish'])) {
+			$temps = $_SESSION['notice-wish'];
+			echo $temps;
+			unset($_SESSION['notice-wish']);
+		}
+	?>
+	<script src="https://sp.zalo.me/plugins/sdk.js"></script>
 </body>
 </html>

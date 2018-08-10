@@ -296,7 +296,7 @@
                         $('.load-more').hide('fast');
                         }else{
                             $('.load-more').css('background-color', '#e6e6e6');
-                            $('.load-more').text('Load more').show().fadeIn('slow');
+                            $('.load-more').text('Load more').show().fadeIn('fast');
 
                             $('.js-show-modal1').on('click',function(e){
                                 e.preventDefault();
@@ -312,7 +312,7 @@
                                 });
                             });
                         }
-                    }, 1500);
+                    }, 500);
                     $('#numbRow').val(numbCurrent + numLimit);
 
                 }
@@ -353,6 +353,61 @@
                     });
                 }
             });
+        });
+    });
+
+    //add class active-menu wwhen select item
+    var menu_items = $('.main-menu li');
+    $(menu_items).each(function() {
+        $(this).on('click', function(event) {
+            //event.preventDefault();
+            for(var i=0;i<menu_items.length;i++){
+                $(menu_items[i]).removeClass('active-menu');
+            }
+            $(this).addClass('active-menu');
+        });
+    });
+
+
+    function searchByName(name){
+      $.ajax({
+          url: 'search-product.php?search_name='+ name,
+          type: 'POST',
+          data: {search_name: name},
+          success: function(result){
+            $('.isotope-grid').html(result).show().fadeIn('slow');
+            $('.js-show-modal1').on('click',function(e){
+                e.preventDefault();
+                var idPro = $(this).data('id');
+                $.post("pre-view-product.php", {id_pro: idPro}, function(result){
+                    $('.js-modal1').html(data);
+                    $('.js-modal1').addClass('show-modal12');
+                    $('.js-hide-modal1').on('click',function(){
+                        $('.js-modal1').html("");
+                        $('.js-modal1').removeClass('show-modal12');
+                    });
+                });
+            });
+          }
+      });
+    }
+
+    // load order-item
+    $('.show-order-items').each(function() {
+        $(this).on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            var id_order = $(this).attr('data-id');
+            $.ajax({
+                url: 'show-order-items.php',
+                type: 'POST',
+                data: {id_order: id_order},
+                success: function function_name(data) {
+                    // body...
+                    // console.log(data);
+                    $('.list-order-items').html(data);
+                }
+            })
         });
     });
 

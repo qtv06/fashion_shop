@@ -87,7 +87,6 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   src: url('../fonts/Poppins/Poppins-Medium.ttf');
 >>>>>>> init project
 }
-
 @font-face {
   font-family: Poppins-Italic;
 <<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
@@ -162,7 +161,27 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .slick-slide {outline: none !important;}
 
 
+.valid{
+  color: #4CAF50 !important;
+  border: 1px solid green;
+}
 
+.valid:after{
+  position: relative !important;
+  left: -5px !important;
+  content: "✓" !important;
+}
+
+.invalid{
+  color: red !important;
+  border: 1px solid red;
+}
+
+.invalid:after{
+  position: relative !important;
+  left: -5px !important;
+  content: "x" !important;
+}
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -2122,7 +2141,7 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .block1-name {color: #333;}
-.block1-info {color: #555;}
+.block1-info {color: #ff1f56;}
 
 /*---------------------------------------------*/
 .block1-txt-child2 {
@@ -2477,13 +2496,14 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .ltext-102 {
-  font-family: Poppins-Bold;
+  font-family: Arial;
+  color: white;
   font-size: 28px;
   line-height: 1.1;
 }
 
 .ltext-103 {
-  font-family: Poppins-Bold;
+  font-family: SANS-SERIF;
   font-size: 36px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -3078,6 +3098,7 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .how-pos4 {
+  width: 20px;
   position: absolute;
   top: calc(50% - 9px);
   left: 28px;
@@ -3488,4 +3509,33 @@ input.num-product::-webkit-inner-spin-button {
 }
 =======
 }
+<<<<<<< HEAD
 >>>>>>> init project
+=======
+section.sec-relate-product.bg0.p-t-45.p-b-105 {
+    /* background:  gray; */
+    padding-bottom: 0px;
+}
+.banner-img{
+  background-size: cover;
+  height: 260px;
+}
+.banner1{
+  background-image: url("../images/ngan6.jpg");
+}
+.banner2{
+  background-image: url("../images/tt13.jpg");
+}
+.banner3{
+  background-image: url("../images/tt8.jpg");
+}
+button.flex-c-m.stext-101.cl0.size-101.bg1.bor1.hov-btn1.p-lr-15.trans-04.js-addcart-detail {
+  margin-left: -19px;
+}
+.zalo-share-button {
+  position: fixed;
+  top: 118px;
+  right: 10px;
+  z-index: 1001;
+}
+>>>>>>> login-logout
