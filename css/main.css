@@ -1,46 +1,28 @@
 /*------------------------------------------------------------------
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 Project:
 Version:
 Last change:
-=======
-Project:
-Version:
-Last change:
->>>>>>> init project
 Assigned to:  Le Xuan Bach
 Primary use:  Company
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [LAYOUT]
-
 * body
   + Header / header
   + Page Content / .page-content .name-page
         + Section Layouts / section .name-section
         ...
   + Footer / footer
-
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [COLOR CODES]
-
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 # Text Color      :
 # Primary Color 01:
 # Primary Color 02:
 # Primary Color 03:
-=======
-# Text Color      :
-# Primary Color 01:
-# Primary Color 02:
-# Primary Color 03:
->>>>>>> init project
-
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [TYPOGRAPHY]
-
 Body            : 16px/1.6 '', Arial, sans-serif;
 Title           : 18px/1.6 '', Arial, sans-serif;
 Paragrap        : 18px/1.6 '', Arial, sans-serif;
@@ -54,94 +36,59 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 @font-face {
   font-family: Poppins-Regular;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   src: url('../fonts/Poppins/Poppins-Regular.ttf');
-=======
-  src: url('../fonts/Poppins/Poppins-Regular.ttf');
->>>>>>> init project
 }
 
 @font-face {
   font-family: Poppins-Light;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   src: url('../fonts/Poppins/Poppins-Light.ttf');
-=======
-  src: url('../fonts/Poppins/Poppins-Light.ttf');
->>>>>>> init project
 }
 
 @font-face {
   font-family: Poppins-ExtraLight;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   src: url('../fonts/Poppins/Poppins-ExtraLight.ttf');
-=======
-  src: url('../fonts/Poppins/Poppins-ExtraLight.ttf');
->>>>>>> init project
 }
 
 @font-face {
   font-family: Poppins-Medium;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   src: url('../fonts/Poppins/Poppins-Medium.ttf');
-=======
-  src: url('../fonts/Poppins/Poppins-Medium.ttf');
->>>>>>> init project
 }
 @font-face {
   font-family: Poppins-Italic;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   src: url('../fonts/Poppins/Poppins-Italic.ttf');
-=======
-  src: url('../fonts/Poppins/Poppins-Italic.ttf');
->>>>>>> init project
 }
 
 @font-face {
   font-family: Poppins-Bold;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   src: url('../fonts/Poppins/Poppins-Bold.ttf');
-=======
-  src: url('../fonts/Poppins/Poppins-Bold.ttf');
->>>>>>> init project
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
-=======
-  src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
->>>>>>> init project
 }
 
 
 /*---------------------------------------------*/
 @font-face {
   font-family: PlayfairDisplay-Regular;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf');
-=======
-  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf');
->>>>>>> init project
 }
 
 @font-face {
   font-family: PlayfairDisplay-Bold;
   src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf');
-
 }
 
 /*---------------------------------------------*/
 @font-face {
   font-family: Montserrat-Regular;
   src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
-
 }
 
 @font-face {
   font-family: Montserrat-Bold;
   src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
-
 }
 
 
@@ -206,7 +153,6 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   animation: loader-scale 1s ease-out infinite;
   top: 50%;
   margin: -28px auto 0 auto;
-
 }
 
 @keyframes loader-scale {
@@ -218,7 +164,6 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   100% {
     transform: scale(1);
     opacity: 0; }
-
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -345,11 +290,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   width: 100%;
   height: 84px;
   top: 40px;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   left: 0px;
-=======
-  left: 0px;
->>>>>>> init project
 
   -webkit-transition: height 0.3s, background-color 0.3s;
   -o-transition: height 0.3s, background-color 0.3s;
@@ -476,11 +417,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   -ms-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.2);
 
   visibility: hidden;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   opacity: 0;
-=======
-  opacity: 0;
->>>>>>> init project
 }
 
 .sub-menu li {
@@ -505,11 +442,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   color: #555;
 
   display: block;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   padding: 8px 20px;
-=======
-  padding: 8px 20px;
->>>>>>> init project
   width: 100%;
 
   transition: all 0.4s;
@@ -532,11 +465,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .sub-menu li:hover > .sub-menu {
   visibility: visible;
   opacity: 1;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 }
-=======
-}
->>>>>>> init project
 
 .sub-menu li:hover {
   background-color: transparent;
@@ -649,11 +578,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   font-size: 50px;
   line-height: 1.2;
   color: #333;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
-=======
-
->>>>>>> init project
   padding: 0px 30px 0px 0px;
   width: calc(100% - 70px);
   height: 100%;
@@ -769,13 +694,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   max-width: calc(100% - 20px);
   max-height: 100%;
   position:absolute;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   top: 0;
   left: 0;
-=======
-  top: 0;
-  left: 0;
->>>>>>> init project
   bottom: 0;
   margin: auto;
 }
@@ -914,17 +834,10 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   right: 0;
   background-color: rgba(0,0,0,0.0);
   visibility: hidden;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
-=======
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
->>>>>>> init project
   transition: all 0.4s;
 }
 
@@ -937,17 +850,10 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   top: 0;
   right: -400px;
   background-color: #fff;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.34;
-=======
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.34;
->>>>>>> init project
   transition: all 0.4s;
 
   box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.18);
@@ -1004,11 +910,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   -moz-transition: all 0.34;
-=======
-  -moz-transition: all 0.34;
->>>>>>> init project
   transition: all 0.4s;
 }
 
@@ -1028,17 +930,10 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   right: 0;
   background-color: rgba(0,0,0,0.0);
   visibility: hidden;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
-=======
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
->>>>>>> init project
   transition: all 0.4s;
 }
 
@@ -1051,17 +946,10 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   top: 0;
   right: -400px;
   background-color: #fff;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.34;
-=======
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.34;
->>>>>>> init project
   transition: all 0.4s;
 
   box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.18);
@@ -1369,11 +1257,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   color: rgba(0,0,0,0.3);
   position: absolute;
   opacity: 0;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
-=======
-
->>>>>>> init project
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -1570,11 +1454,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .arrow-slick3 {
   font-size: 25px;
   color: #fff;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
-=======
-
->>>>>>> init project
   position: absolute;
   top: 0;
   width: 40px;
@@ -1852,11 +1732,7 @@ button.mfp-close {
   background-color: #f2f2f2;
   border-left: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
-=======
-
->>>>>>> init project
   transform-origin: center center;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1951,11 +1827,7 @@ input.num-product {
 input.num-product::-webkit-outer-spin-button,
 input.num-product::-webkit-inner-spin-button {
   -webkit-appearance: none;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   margin: 0;
-=======
-  margin: 0;
->>>>>>> init project
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -1996,11 +1868,7 @@ input.num-product::-webkit-inner-spin-button {
   -o-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
-=======
-
->>>>>>> init project
   visibility: hidden;
   opacity: 0;
 }
@@ -2042,11 +1910,7 @@ input.num-product::-webkit-inner-spin-button {
   opacity: 0.8;
 }
 
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 .show-modal12 {
-=======
-.show-modal1 {
->>>>>>> init project
   visibility: visible;
   opacity: 1;
 }
@@ -2565,11 +2429,7 @@ input.num-product::-webkit-inner-spin-button {
 
 
 /*==================================================================
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
     SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE
-=======
-    SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE SIZE
->>>>>>> init project
 ==================================================================*/
 
 
@@ -2792,11 +2652,7 @@ input.num-product::-webkit-inner-spin-button {
 
 
 /*==================================================================
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
    BACKGROUND BACKGROUND BACKGROUND BACKGROUND BACKGROUND BACKGROUND
-=======
-   BACKGROUND BACKGROUND BACKGROUND BACKGROUND BACKGROUND BACKGROUND
->>>>>>> init project
 ==================================================================*/
 .bg-none {background-color: transparent;}
 .bg0 {background-color: #fff;}
@@ -2929,11 +2785,7 @@ input.num-product::-webkit-inner-spin-button {
 
 
 /*==================================================================
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
  HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW
-=======
- HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW
->>>>>>> init project
 ==================================================================*/
 .plh0::-webkit-input-placeholder { color: #999999;}
 .plh0:-moz-placeholder { color: #999999;}
@@ -3226,10 +3078,7 @@ input.num-product::-webkit-inner-spin-button {
 
 .hov-img0 img{
   width: 100%;
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
   height: 334px;
-=======
->>>>>>> init project
   -webkit-transition: transform 0.9s ease;
   -o-transition: transform 0.9s ease;
   -moz-transition: transform 0.9s ease;
@@ -3447,11 +3296,7 @@ input.num-product::-webkit-inner-spin-button {
   .respon1 {
     font-size: 40px;
   }
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
-=======
-
->>>>>>> init project
   /*---------------------------------------------*/
   .respon2 {
     font-size: 20px;
@@ -3471,11 +3316,7 @@ input.num-product::-webkit-inner-spin-button {
     padding-left: 60px;
   }
 
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 
-=======
-
->>>>>>> init project
 }
 
 
@@ -3505,13 +3346,7 @@ input.num-product::-webkit-inner-spin-button {
     padding: 20px;
   }
 
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 }
-=======
-}
-<<<<<<< HEAD
->>>>>>> init project
-=======
 section.sec-relate-product.bg0.p-t-45.p-b-105 {
     /* background:  gray; */
     padding-bottom: 0px;
@@ -3538,4 +3373,3 @@ button.flex-c-m.stext-101.cl0.size-101.bg1.bor1.hov-btn1.p-lr-15.trans-04.js-add
   right: 10px;
   z-index: 1001;
 }
->>>>>>> login-logout

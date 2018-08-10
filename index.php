@@ -33,11 +33,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<<<<<<< 838750189a9dc18e70e589498597b808f0e6e601
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 
-=======
->>>>>>> init project
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -235,12 +232,6 @@
 										<?php echo $ro['name']; ?>
 									</a>
 
-<<<<<<< HEAD
-								<li class="p-b-6">
-									<a href="#" data-type="hightolow" class="filter-link stext-106 trans-04">
-
-										Price: High to Low
-=======
 									<span class="stext-105 cl3">
 										$<?php echo $ro['price']; ?>
 									</span>
@@ -250,7 +241,6 @@
 									<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
 										<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
 										<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
->>>>>>> login-logout
 									</a>
 								</div>
 							</div>
@@ -271,19 +261,6 @@
 				</h4>
 			</div>
 
-<<<<<<< HEAD
-								<li class="p-b-6">
-									<a href="#" data-type="0_50" class="filter-link stext-106 trans-04">
-
-										$0.00 - $50.00
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" data-type="50_100" class="filter-link stext-106 trans-04">
-
-										$50.00 - $100.00
-=======
 			<!-- Slide2 -->
 			<div class="wrap-slick2">
 				<div class="slick2">
@@ -307,22 +284,8 @@
 								<div class="block2-txt-child1 flex-col-l ">
 									<a href="product-detail.php?id=<?php echo $ro['product_id']; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 										<?php echo $ro['name']; ?>
->>>>>>> login-logout
 									</a>
 
-<<<<<<< HEAD
-								<li class="p-b-6">
-									<a href="#" data-type="100_150" class="filter-link stext-106 trans-04">
-
-										$100.00 - $150.00
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" data-type="150" class="filter-link stext-106 trans-04">
-										> $150.00
-
-=======
 									<span class="stext-105 cl3">
 										$<?php echo $ro['price']; ?>
 									</span>
@@ -332,12 +295,10 @@
 									<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
 										<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
 										<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
->>>>>>> login-logout
 									</a>
 								</div>
 							</div>
 						</div>
-
 					</div>
 					<?php } ?>
 				</div>
@@ -410,7 +371,6 @@
 			</div>
 			<input type="hidden" id="numbRow" value="8">
 			<input type="hidden" id="numbAll" value="<?php echo $numbAll['number_row']; ?>">
-
 		</div>
 	</section>
 	<!-- Footer -->
@@ -481,37 +441,29 @@
 		// $('.js-addwish-b2').on('click', function(e){
 		// 	e.preventDefault();
 		// });
-
 		// $('.js-addwish-b2').each(function(){
 		// 	var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
 		// 	$(this).on('click', function(){
 		// 		swal(nameProduct, "is added to wishlist !", "success");
-
 		// 		$(this).addClass('js-addedwish-b2');
 		// 		$(this).off('click');
 		// 	});
 		// });
-
 		$('.js-addwish-detail').each(function(){
 			var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
-
 			$(this).on('click', function(){
 				swal(nameProduct, "is added to wishlist !", "success");
-
 				$(this).addClass('js-addedwish-detail');
 				$(this).off('click');
 			});
 		});
-
 		/*---------------------------------------------*/
-
 		$('.js-addcart-detail').each(function(){
 			var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
 			$(this).on('click', function(){
 				swal(nameProduct, "is added to cart !", "success");
 			});
 		});
-
 	</script>
 
 <!--===============================================================================================-->
@@ -525,7 +477,6 @@
 				scrollingThreshold: 1000,
 				wheelPropagation: false,
 			});
-
 			$(window).on('resize', function(){
 				ps.update();
 			})
