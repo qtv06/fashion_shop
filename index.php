@@ -387,7 +387,7 @@
 	<div class="wrap-modal1 js-modal1 p-t-60 p-b-20">
 
 	</div>
-	<div class="zalo-share-button" data-href="https://www.facebook.com/" data-oaid="3337183327522788222" data-layout="5" data-color="blue" data-customize=false></div>
+	<div class="zalo-share-button" data-href="https://tvshop.herokuapp.com" data-oaid="3337183327522788222" data-layout="5" data-color="blue" data-customize=false></div>
 
 
 <!--===============================================================================================-->
