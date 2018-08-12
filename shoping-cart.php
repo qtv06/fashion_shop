@@ -126,7 +126,7 @@
 				</div>
 
 				<div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
-					<div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
+					<div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-20 m-r-20 m-lr-0-xl p-lr-15-sm">
 						<h4 class="mtext-109 cl2 p-b-30">
 							Thống kê giỏ hàng
 						</h4>

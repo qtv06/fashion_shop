@@ -278,7 +278,7 @@
         /* Act on the event */
         var numbCurrent = Number($('#numbRow').val());
         var numbAll = Number($('#numbAll').val());
-        var numLimit = 4;
+        var numLimit = 8;
         // alert(numbCurrent + ' - '+ numbAll);
         if(numbCurrent < numbAll){
             $.ajax({

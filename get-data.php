@@ -2,7 +2,7 @@
   include("connect.php");
   if(isset($_POST['numCurrent'])){
     $numCurrent = $_POST['numCurrent'];
-    $numLimit = 4;
+    $numLimit = 8;
     $sql = "select product_id, name, price, image, description, category_name from products p join categories c on p.category_id = c.category_id limit ".$numCurrent." , ".$numLimit;
     $result = mysqli_query($conn, $sql);
     $html = '';
